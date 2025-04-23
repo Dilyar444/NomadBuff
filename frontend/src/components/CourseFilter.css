@@ -1,0 +1,48 @@
+.course-filter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .course-btn {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .course-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .faculty-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 10;
+  }
+  
+  .faculty-item {
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .faculty-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

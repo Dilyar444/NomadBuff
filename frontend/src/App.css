@@ -5,15 +5,29 @@
   
 }
 
-.header1 { 
-  color : #ce202a;
-  display: inline-block;
-  
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color:   #f8f8f8;
 }
 
-.header2{
-  color : black;
-  display: inline-block;
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.header1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #CE202A ;
+}
+
+.header2 {
+  font-size: 36px;
+  color: #333;
 }
 .top-three {
   display: flex;

@@ -1,31 +1,48 @@
-table {
+.student-table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    margin: 40px auto;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
   }
   
   thead {
-    background-color: #1d262e;
+    z-index: 1;
+  }
+  
+  th {
+    position: sticky;
+    top: 0;
+    background-color: #333;
     color: white;
-  }
-  
-  th, td {
-    padding: 12px 15px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
-  tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tbody tr:hover {
-    background-color: #f1f1f1;
+    padding: 12px;
+    text-align: center;
+    z-index: 2;
   }
   
   td {
-    color: #333;
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+
+
+  .score-high {
+    background-color: #12bf544c; /* Светло-зеленый */
+  }
+  
+  .score-medium {
+    background-color: #df8f0d47; /* Светло-оранжевый */
+  }
+  
+  .score-low {
+    background-color: #b11c0b36; /* Светло-красный */
   }
   
