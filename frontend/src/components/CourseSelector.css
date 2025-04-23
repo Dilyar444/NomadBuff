@@ -1,0 +1,35 @@
+.course-selector-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .course-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .course-button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: scale(1.03);
+  }
+  
+  .course-button:active {
+    transform: scale(0.98);
+  }
+  
+  .course-button.active {
+    background-color: #333;
+    color: white;
+    transform: scale(1.05);
+  }
