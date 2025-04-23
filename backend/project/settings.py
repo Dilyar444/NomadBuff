@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'corsheaders',
     'students',
+    'drf_yasg', 
 ]
 
 MIDDLEWARE = [
